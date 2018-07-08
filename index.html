@@ -71,7 +71,7 @@
       <h2>Providing a <span>safe haven</span><br>for victims of domestic abuse.</h2>
       <div>
         <a href="#apply" class="btn-get-started scrollto">Apply Now</a>
-        <a href="#apply" class="btn-projects scrollto">Become a Haven</a>
+        <a href="#haven" class="btn-projects scrollto">Become a Haven</a>
       </div>
     </div>
 
@@ -121,7 +121,7 @@
 
         <div class="row">
 
-          <div class="col-lg-6">
+          <div class="col-lg-10">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="fa fa-home"></i></div>
               <h4 class="title"><a href="">Home Sharers Donate Their Spaces</a></h4>
@@ -129,7 +129,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-10">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="fa fa-child"></i></div>
               <h4 class="title"><a href="">Applicants are Matched to a Home</a></h4>
@@ -137,7 +137,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-10">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-taxi"></i></div>
               <h4 class="title"><a href="">Victims are Relocated</a></h4>
@@ -171,36 +171,81 @@
 
       </div>
     </section><!-- #clients -->
-    
+
+    <!--==========================
+      Apply Section
+    ============================-->
+    <section id="apply" class="wow fadeInUp">
       <div class="container">
+        <div class="section-header">
+          <h2>Apply Now</h2>
+          <p>If you are a victim of domestic abuse apply here to be matched with a haven and relocated. All of your information is confidential and all matches are not disclosed to outside parties.</p>
+        </div>
+
+        <div class="container" style="padding-bottom: 40px;">
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="zip" class="form-control" id="zip" placeholder="Zip Code" data-rule="minlen:4" data-msg="Please enter at least 5 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" data-rule="minlen:4" data-msg="Please enter at least 10 chars" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Please let us know the soonest date you will be available to relocate and any other relevant circumstances."></textarea>
               <div class="validation"></div>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit">Apply</button></div>
           </form>
         </div>
 
       </div>
-    </section><!-- #contact -->
+    </section><!-- #apply -->
+
+
+    <!--==========================
+      Become Haven Section
+    ============================-->
+    <section id="haven" class="wow fadeInUp">
+      <div class="container" style="padding-bottom: 40px;">
+        <div class="section-header">
+          <h2>Become a Haven</h2>
+          <p>If you participate in home sharing and would like to donate your space to victims looking to escape domestic abuse, please click your home sharing service below and follow the instructions to become a haven.</p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm text-center">
+              <img class="" src="img/airbnb.jpg" style="padding-bottom: 20px; width: 100%;">
+              <a href="#" class="btn btn-primary">Airbnb <i class="fa fa-external-link"></i></a>
+            </div>
+            <div class="col-sm text-center">
+              <img class="" src="img/homeaway.png" style="padding-bottom: 20px; width: 100%;">
+              <a href="#" class="btn btn-primary">HomeAway <i class="fa fa-external-link"></i></a>
+            </div>
+            <div class="col-sm text-center">
+              <img class="" src="img/vrbo.png" style="padding-bottom: 20px; width: 100%;">
+              <a href="#" class="btn btn-primary">VRBO <i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #apply -->
 
   </main>
 
